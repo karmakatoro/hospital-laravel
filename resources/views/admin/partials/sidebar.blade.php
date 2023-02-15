@@ -4,10 +4,10 @@
             <ul>
                 <li class="menu-title">Main</li>
                 <li class="active">
-                    <a href="index-2.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                    <a href="{{url('redirect')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="doctors.html"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
+                    <a href="{{url('doctors')}}"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                 </li>
                 <li>
                     <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
