@@ -1,6 +1,4 @@
-{{-- <x-app-layout>
-   
-</x-app-layout> --}}
+
 @extends('admin.layouts.base')
 
 @section('content')
