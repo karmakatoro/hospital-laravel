@@ -104,7 +104,7 @@
                             </x-jet-dropdown-link>
 
                             <x-jet-dropdown-link href="#">
-                                {{ __('Edit Profile') }}
+                                {{ __('EditProfile') }}
                             </x-jet-dropdown-link>
 
                             <x-jet-dropdown-link href="#">
