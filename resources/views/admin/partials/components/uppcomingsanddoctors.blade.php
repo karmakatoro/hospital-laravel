@@ -118,7 +118,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                <a href="profile.html" title="John Doe"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -129,7 +129,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                <a href="profile.html" title="Richard Miles"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">Richard Miles</span>
@@ -140,7 +140,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
+                                <a href="profile.html" title="John Doe"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -151,7 +151,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                <a href="profile.html" title="Richard Miles"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">Richard Miles</span>
@@ -162,7 +162,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                <a href="profile.html" title="John Doe"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">John Doe</span>
@@ -173,7 +173,7 @@
                     <li>
                         <div class="contact-cont">
                             <div class="float-left user-img m-r-10">
-                                <a href="profile.html" title="Richard Miles"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
+                                <a href="profile.html" title="Richard Miles"><img src="admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
                             </div>
                             <div class="contact-info">
                                 <span class="contact-name text-ellipsis">Richard Miles</span>
