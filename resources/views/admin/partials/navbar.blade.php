@@ -107,7 +107,8 @@
             <a class="dropdown-item" href="profile.html">My Profile</a>
             <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
             <a class="dropdown-item" href="settings.html">Settings</a>
-            <a class="dropdown-item" href="login.html">Logout</a>
+            <a class="dropdown-item"  href="{{ route('logout') }}"
+            @click.prevent="$root.submit();">{{ __('Log Out') }}</a>
         </div>
     </div>
 </div>
