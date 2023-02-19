@@ -35,18 +35,6 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Password</label>
-                                <input class="form-control" type="password">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Confirm Password</label>
-                                <input class="form-control" type="password">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
                                 <label>Date of Birth</label>
                                 <div class="cal-icon">
                                     <input type="text" class="form-control datetimepicker">
