@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('user_type')->default(1);
             $table->date('date_of_birth');
             $table->string('gender');
-            $table->integer('country');
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->integer('role');
             $table->integer('affected');
             $table->integer('phone');
