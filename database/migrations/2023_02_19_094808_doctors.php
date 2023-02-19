@@ -22,14 +22,16 @@ return new class extends Migration
             $table->string('user_type')->default(1);
             $table->date('date_of_birth');
             $table->string('gender');
-            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
-            $table->integer('role');
+            $table->unsignedBigInteger('country_id');
+            $table->unsignedBigInteger('role_id');
             $table->integer('affected');
             $table->integer('phone');
             $table->string('avatar');
             $table->string('bio');
             $table->integer('status')->default(0);
             $table->timestamps();
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
         });
     }
 
