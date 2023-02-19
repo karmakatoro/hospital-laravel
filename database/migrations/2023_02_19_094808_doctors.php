@@ -23,10 +23,12 @@ return new class extends Migration
             $table->date('date_of_birth');
             $table->string('gender');
             $table->integer('country');
-            $table->string('password');
-            $table->rememberToken();
-            $table->foreignId('current_team_id')->nullable();
-            $table->string('profile_photo_path', 2048)->nullable();
+            $table->integer('role');
+            $table->integer('affected');
+            $table->integer('phone');
+            $table->string('avatar');
+            $table->string('bio');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

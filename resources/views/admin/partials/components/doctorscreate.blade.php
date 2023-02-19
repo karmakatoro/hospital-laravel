@@ -81,18 +81,20 @@
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
-                                        <label>State/Province</label>
+                                        <label>Role</label>
                                         <select class="form-control select">
-                                            <option>California</option>
-                                            <option>Alaska</option>
-                                            <option>Alabama</option>
+                                            <option>Dentist</option>
+                                            <option>Neurologist</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
-                                        <label>Postal Code</label>
-                                        <input type="text" class="form-control">
+                                        <label>Affected</label>
+                                        <select class="form-control select">
+                                            <option>Dentist</option>
+                                            <option>Neurologist</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
