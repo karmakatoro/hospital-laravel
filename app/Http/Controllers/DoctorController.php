@@ -3,8 +3,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use App\Models\User;
+use App\Models\Countries;
 
 class DoctorController extends Controller
 {
@@ -12,10 +13,10 @@ class DoctorController extends Controller
        $this->middleware('auth'); 
     }
     public function index(){
-        $countries = DB::table('countries')->compact('countries')->get();
-        return view('admin.doctors')->with($countries);
+        return view('admin.doctors');
     }
     public function create_doctor(){
-        return view('admin.create_doctor');
+        $countries = DB::table('countries')->get();
+        return view('admin.create_doctor', compact('countries'));
     }
 }

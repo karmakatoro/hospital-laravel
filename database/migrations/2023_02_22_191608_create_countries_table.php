@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
+            $table->integer('phone_code');
+            $table->string('country_code');
+            $table->string('country_name', 80)->unique();
             $table->timestamps();
         });
     }
