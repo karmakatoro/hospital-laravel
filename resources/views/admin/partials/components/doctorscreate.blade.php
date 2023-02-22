@@ -84,8 +84,10 @@
                                     <div class="form-group">
                                         <label>Role</label>
                                         <select class="form-control select">
-                                            <option>Dentist</option>
-                                            <option>Neurologist</option>
+                                            @foreach($roles as $role)
+                                                <option value="{{ $role->id }}">{{ $role->designation }}</option>
+                                            @endforeach
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -93,8 +95,10 @@
                                     <div class="form-group">
                                         <label>Affected</label>
                                         <select class="form-control select">
-                                            <option>Dentist</option>
-                                            <option>Neurologist</option>
+                                        @foreach($services as $service)
+                                            <option value="{{ $service->id }}">{{ $service->designation }}</option>
+                                        @endforeach
+                                            
                                         </select>
                                     </div>
                                 </div>

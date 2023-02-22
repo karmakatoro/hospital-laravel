@@ -18,7 +18,7 @@ class DoctorController extends Controller
     public function create_doctor(){
         $countries = DB::table('countries')->get();
         $roles = DB::table('roles')->get();
-        $service = DB::table('services')->get();
-        return view('admin.create_doctor', compact('countries'));
+        $services = DB::table('services')->get();
+        return view('admin.create_doctor', compact('countries','roles','services'));
     }
 }
