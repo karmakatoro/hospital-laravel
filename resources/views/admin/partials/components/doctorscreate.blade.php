@@ -68,8 +68,11 @@
                                     <div class="form-group">
                                         <label>Country</label>
                                         <select class="form-control select">
-                                            <option>USA</option>
-                                            <option>United Kingdom</option>
+                                        @foreach($countries as $country)
+                                            <option>{{ $country->name() }}</option>
+                                        @endforeach
+                                            
+                                            
                                         </select>
                                     </div>
                                 </div>
