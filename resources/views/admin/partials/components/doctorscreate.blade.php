@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <form>
+                <form method="post">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
