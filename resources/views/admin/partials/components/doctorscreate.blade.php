@@ -5,39 +5,41 @@
                 <h4 class="page-title">Add Doctor</h4>
             </div>
         </div>
-
-       <div class="row">
+        <div class="row">
         @if($errors->any())
-            <div class="alert alert-danger">
+            <div class="col-sm-12 alert alert-danger">
                 <ul>
-                    @foreach($errors->any() as $error)
+                    @foreach($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
             </div>
         @endif
         </div>
+
+       
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <form method="post" action="{{ route('doctors.create') }}">
+            
+                <form method="POST" action="{{ route('doctors.store') }}">
                 @csrf
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>First Name <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text" name="firstname">
+                                <input class="form-control" type="text" name="first_name">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Last Name</label>
-                                <input class="form-control" type="text" name="lastname">
+                                <input class="form-control" type="text" name="last_name">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Username <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text" name="username">
+                                <input class="form-control" type="text" name="user_name">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -50,7 +52,7 @@
                             <div class="form-group">
                                 <label>Date of Birth</label>
                                 <div class="cal-icon">
-                                    <input type="text" class="form-control datetimepicker" name="birth">
+                                    <input type="text" class="form-control datetimepicker" name="date_of_birth">
                                 </div>
                             </div>
                         </div>
@@ -80,9 +82,9 @@
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
                                         <label>Country</label>
-                                        <select class="form-control select">
+                                        <select class="form-control select" name="country_id">
                                         @foreach($countries as $country)
-                                            <option value="{{ $country->id }}" name="country">{{ $country->country_name }}</option>
+                                            <option value="{{ $country->id }}">{{ $country->country_name }}</option>
                                         @endforeach
                                         </select>
                                     </div>
@@ -96,9 +98,9 @@
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
                                         <label>Role</label>
-                                        <select class="form-control select">
+                                        <select class="form-control select" name="role_id">
                                             @foreach($roles as $role)
-                                                <option value="{{ $role->id }}" name="role">{{ $role->designation }}</option>
+                                                <option value="{{ $role->id }}">{{ $role->designation }}</option>
                                             @endforeach
                                             
                                         </select>
@@ -107,9 +109,9 @@
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
                                         <label>Affected</label>
-                                        <select class="form-control select">
+                                        <select class="form-control select"  name="affected_id">
                                         @foreach($services as $service)
-                                            <option value="{{ $service->id }}" name="affected">{{ $service->designation }}</option>
+                                            <option value="{{ $service->id }}">{{ $service->designation }}</option>
                                         @endforeach
                                         </select>
                                     </div>
@@ -143,13 +145,13 @@
                     <div class="form-group">
                         <label class="display-block">Status</label>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="status" id="doctor_active" value="active" checked>
+                            <input class="form-check-input" type="radio" name="status" id="doctor_active" value="0" checked>
                             <label class="form-check-label" for="doctor_active">
                             Active
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="status" id="doctor_inactive" value="inactive">
+                            <input class="form-check-input" type="radio" name="status" id="doctor_inactive" value="1">
                             <label class="form-check-label" for="doctor_inactive">
                             Inactive
                             </label>

@@ -50,7 +50,24 @@ class DoctorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'user_name' => 'required',
+            'email' => 'required',
+            'date_of_birth' => 'required',
+            'gender' => 'required',
+            'country_id' => 'required',
+            'city' => 'required',
+            'role_id' => 'required',
+            'affected_id' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'bio' => 'required','status' => 'required'
+        ]);
+        Doctors::create($request->all());
+        return redirect()->route('doctors.index')
+        ->with('success','Doctor created successfully');
     }
 
     /**

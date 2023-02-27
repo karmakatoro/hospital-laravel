@@ -10,7 +10,7 @@
         </div>
         <div class="row">
         @if($message = Session::get('success'))
-            <div class="alert alert-success">
+            <div class="col-sm-12 alert alert-success">
                 <h4>{{ $message }}</h4>
             </div>
         @endif

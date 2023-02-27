@@ -23,17 +23,18 @@ return new class extends Migration
             $table->date('date_of_birth');
             $table->string('gender');
             $table->unsignedBigInteger('country_id');
+            $table->string("city");
             $table->unsignedBigInteger('role_id');
             $table->unsignedBigInteger('affected_id');
             $table->integer('phone');
+            $table->string('address');
             $table->string('avatar');
             $table->string('bio');
             $table->integer('status')->default(0);
-            $table->timestamps();
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
             $table->foreign('affected_id')->references('id')->on('services')->onDelete('cascade');
-
+            $table->timestamps();
         });
     }
 
