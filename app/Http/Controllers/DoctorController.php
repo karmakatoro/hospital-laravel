@@ -12,15 +12,12 @@ class DoctorController extends Controller
         $this->middleware('auth'); 
      }
    
-     public function create_doctor(){
-         $countries = DB::table('countries')->get();
-         $roles = DB::table('roles')->get();
-         $services = DB::table('services')->get();
-         return view('admin.create_doctor', compact('countries','roles','services'));
-     }
-     public function add_doctor(){
+    //  public function create_doctor(){
+        
+    //  }
+    //  public function add_doctor(){
          
-     }
+    //  }
     /**
      * Display a listing of the resource.
      *
@@ -39,7 +36,10 @@ class DoctorController extends Controller
      */
     public function create()
     {
-        //
+        $countries = DB::table('countries')->get();
+        $roles = DB::table('roles')->get();
+        $services = DB::table('services')->get();
+        return view('admin.create_doctor', compact('countries','roles','services'));
     }
 
     /**

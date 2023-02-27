@@ -31,6 +31,6 @@ Route::middleware([
 });
 
 Route::get('/redirect', [HomeController::class, 'redirect']);
-Route::get('/doctors', [DoctorController::class, 'index']);
-Route::get('/create_doctor', [DoctorController::class, 'create_doctor']);
+Route::resource('doctors','App\Http\Controllers\DoctorController');
+
 

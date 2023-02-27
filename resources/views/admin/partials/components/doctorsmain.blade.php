@@ -5,8 +5,15 @@
                 <h4 class="page-title">Doctors</h4>
             </div>
             <div class="col-sm-8 col-9 text-right m-b-20">
-                <a href="{{ url('create_doctor') }}" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
+                <a href="{{ route('doctors.create') }}" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
             </div>
+        </div>
+        <div class="row">
+        @if($message = Session::get('success'))
+            <div class="alert alert-success">
+                <h4>{{ $message }}</h4>
+            </div>
+        @endif
         </div>
         <div class="row doctor-grid">
             <div class="col-md-4 col-sm-4  col-lg-3">

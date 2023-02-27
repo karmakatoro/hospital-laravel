@@ -1,7 +1,7 @@
 <div class="header">
     <div class="header-left">
         <a href="index-2.html" class="logo">
-            <img src="admin/assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+            <img src="{{ asset('admin/assets/img/logo.png') }}" width="35" height="35" alt=""> <span>Preclinic</span>
         </a>
     </div>
     <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -19,7 +19,7 @@
                             <a href="activities.html">
                                 <div class="media">
                                     <span class="avatar">
-                                        <img alt="John Doe" src="admin/assets/img/user.jpg" class="img-fluid">
+                                        <img alt="John Doe" src="{{ asset('admin/assets/img/user.jpg') }}" class="img-fluid">
                                     </span>
                                     <div class="media-body">
                                         <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -86,7 +86,7 @@
             
             <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                 <span class="user-img">
-                    <img class="rounded-circle" src="admin/assets/img/user.jpg" width="24" alt="Admin">
+                    <img class="rounded-circle" src="{{ asset('admin/assets/img/user.jpg') }}" width="24" alt="Admin">
                     <span class="status online"></span>
                 </span>
                 <span>Admin</span>

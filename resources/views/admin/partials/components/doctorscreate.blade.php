@@ -5,9 +5,22 @@
                 <h4 class="page-title">Add Doctor</h4>
             </div>
         </div>
+
+       <div class="row">
+        @if($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->any() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        </div>
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <form method="post">
+                <form method="post" action="{{ route('doctors.create') }}">
+                @csrf
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -114,7 +127,7 @@
                                 <label>Avatar</label>
                                 <div class="profile-upload">
                                     <div class="upload-img">
-                                        <img alt="" src="admin/assets/img/user.jpg">
+                                        <img alt="" src="{{ asset('admin/assets/img/user.jpg') }}">
                                     </div>
                                     <div class="upload-input">
                                         <input type="file" class="form-control" name="avatar">
@@ -143,7 +156,7 @@
                         </div>
                     </div>
                     <div class="m-t-20 text-center">
-                        <button class="btn btn-primary submit-btn">Create Doctor</button>
+                        <button type="submit" class="btn btn-primary submit-btn">Create Doctor</button>
                     </div>
                 </form>
             </div>
