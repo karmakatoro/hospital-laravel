@@ -8,37 +8,36 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <form method="post">
-                @csrf
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>First Name <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text" id="firstname">
+                                <input class="form-control" type="text" name="firstname">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Last Name</label>
-                                <input class="form-control" type="text" id="lastname">
+                                <input class="form-control" type="text" name="lastname">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Username <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text" id="username">
+                                <input class="form-control" type="text" name="username">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Email <span class="text-danger">*</span></label>
-                                <input class="form-control" type="email" id="email">
+                                <input class="form-control" type="email" name="email">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label>Date of Birth</label>
                                 <div class="cal-icon">
-                                    <input type="text" class="form-control datetimepicker" id="birth">
+                                    <input type="text" class="form-control datetimepicker" name="birth">
                                 </div>
                             </div>
                         </div>
@@ -47,12 +46,12 @@
                                 <label class="gen-label">Gender:</label>
                                 <div class="form-check-inline">
                                     <label class="form-check-label">
-                                        <input type="radio" id="gender" class="form-check-input">Male
+                                        <input type="radio" name="gender" class="form-check-input">Male
                                     </label>
                                 </div>
                                 <div class="form-check-inline">
                                     <label class="form-check-label">
-                                        <input type="radio" id="gender" class="form-check-input">Female
+                                        <input type="radio" name="gender" class="form-check-input">Female
                                     </label>
                                 </div>
                             </div>
@@ -62,7 +61,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label>Address</label>
-                                        <input type="text" class="form-control" id="address">
+                                        <input type="text" class="form-control" name="address">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
@@ -70,7 +69,7 @@
                                         <label>Country</label>
                                         <select class="form-control select">
                                         @foreach($countries as $country)
-                                            <option value="{{ $country->id }}" id="country">{{ $country->country_name }}</option>
+                                            <option value="{{ $country->id }}" name="country">{{ $country->country_name }}</option>
                                         @endforeach
                                         </select>
                                     </div>
@@ -78,7 +77,7 @@
                                 <div class="col-sm-6 col-md-6 col-lg-3">
                                     <div class="form-group">
                                         <label>City</label>
-                                        <input type="text" class="form-control" id="city">
+                                        <input type="text" class="form-control" name="city">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6 col-lg-3">
@@ -86,7 +85,7 @@
                                         <label>Role</label>
                                         <select class="form-control select">
                                             @foreach($roles as $role)
-                                                <option value="{{ $role->id }}" id="role">{{ $role->designation }}</option>
+                                                <option value="{{ $role->id }}" name="role">{{ $role->designation }}</option>
                                             @endforeach
                                             
                                         </select>
@@ -97,7 +96,7 @@
                                         <label>Affected</label>
                                         <select class="form-control select">
                                         @foreach($services as $service)
-                                            <option value="{{ $service->id }}" id="affected">{{ $service->designation }}</option>
+                                            <option value="{{ $service->id }}" name="affected">{{ $service->designation }}</option>
                                         @endforeach
                                         </select>
                                     </div>
