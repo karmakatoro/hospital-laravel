@@ -27,7 +27,6 @@ class DoctorController extends Controller
     {
         $doctors = DB::table('doctors')->get();
         return view('admin.doctors', compact('doctors'));
-        // return view('admin.doctors');
     }
 
     /**

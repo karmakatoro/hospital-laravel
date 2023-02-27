@@ -30,9 +30,10 @@
                             </div>
                         </div>
                         <h4 class="doctor-name text-ellipsis"><a href="profile.html">{{ $doctor->first_name. ' '.$doctor->last_name}}</a></h4>
-                        <div class="doc-prof">Gynecologist</div>
+                        
+                        <div class="doc-prof">{{ $doctor->id }}</div>
                         <div class="user-country">
-                            <i class="fa fa-map-marker"></i> United States,{{$doctor->city}}
+                            <i class="fa fa-map-marker"></i>United States, {{$doctor->city}}
                         </div>
                     </div>
                 </div>
