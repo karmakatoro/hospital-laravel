@@ -25,7 +25,7 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        $doctors = DB::table('doctors')->get();
+        $doctors = DB::table('v_doctors_roles_services')->get();
         return view('admin.doctors', compact('doctors'));
     }
 
