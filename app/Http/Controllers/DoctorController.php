@@ -89,7 +89,10 @@ class DoctorController extends Controller
      */
     public function edit(Doctors $doctors)
     {
-        //
+        $countries = DB::table('countries')->get();
+        $roles = DB::table('roles')->get();
+        $services = DB::table('services')->get();
+        return view('admin.edit_doctor', compact('doctors','countries','roles','services'));
     }
 
     /**
@@ -101,7 +104,12 @@ class DoctorController extends Controller
      */
     public function update(Request $request, Doctors $doctors)
     {
-        //
+        $request->validate([
+
+        ]);
+        $doctors->update($request->all());
+        return redirect()->route('doctors.index')
+        ->with('success','Doctor updated successfully');
     }
 
     /**
