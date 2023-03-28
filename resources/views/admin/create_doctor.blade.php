@@ -7,6 +7,5 @@
     <!-- side bar-->
     @include('admin.partials.sidebar')
     <!--page wrapper-->
-    @include('admin.partials.components.doctorsedit')    
+    @include('admin.partials.components.doctorscreate')
 @endsection
-        

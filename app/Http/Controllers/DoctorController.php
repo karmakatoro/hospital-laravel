@@ -9,14 +9,14 @@ use Illuminate\Support\Facades\DB;
 class DoctorController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth'); 
+        $this->middleware('auth');
      }
-   
+
     //  public function create_doctor(){
-        
+
     //  }
     //  public function add_doctor(){
-         
+
     //  }
     /**
      * Display a listing of the resource.

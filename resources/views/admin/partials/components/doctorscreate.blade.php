@@ -17,10 +17,10 @@
         @endif
         </div>
 
-       
+
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-            
+
                 <form method="POST" action="{{ route('doctors.store') }}">
                 @csrf
                     <div class="row">
@@ -102,7 +102,7 @@
                                             @foreach($roles as $role)
                                                 <option value="{{ $role->id }}">{{ $role->designation }}</option>
                                             @endforeach
-                                            
+
                                         </select>
                                     </div>
                                 </div>
